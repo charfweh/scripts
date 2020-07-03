@@ -6,7 +6,7 @@ The answer is ``node-cron``(nodejs) or cron jobs(in general), which are time bas
 Keep in mind the timings are suitable to my needs so whats happening in the script is there's a scheduler which will fire up the time is either ``11am 5min`` or ``23pm 5min``.
 
 ### Setup
-- Get em modules listed in [Quick Links](https://github.com/charfweh/nodejs_scripts#quick-links)
+- Get em modules listed in ``Quick Links``
 - Clone or copy the code do whatever you want
 - Type in ``forever start the_damn_bot.js`` and thats pretty much it ;)
 
@@ -14,4 +14,5 @@ Keep in mind the timings are suitable to my needs so whats happening in the scri
 - [node-cron](https://www.npmjs.com/package/node-cron)
 - [open](https://www.npmjs.com/package/open)
 - [forever](https://www.npmjs.com/package/forever)
+
 *Honestly dawg, I've no idea*
