@@ -6,4 +6,5 @@ Keep in mind the timings are suitable to my needs so whats happening in the scri
 ### Quick Links
 - [node-cron](https://www.npmjs.com/package/node-cron)
 - [open](https://www.npmjs.com/package/open)
-**Honestly dawg, I've no idea**
+
+*Honestly dawg, I've no idea*
