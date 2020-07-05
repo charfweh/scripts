@@ -10,12 +10,12 @@ try:
         yt = soup.title
         print(yt.text)
         title = soup.find("meta",  property = "og:title")
-        print(title["content"])
+        print("[+] Title:",title["content"])
         desc = soup.find("meta", property = "og:description")
-        print(desc["content"])
+        print("[+] Description:",desc["content"])
         thumbimg = soup.find("meta", property = "og:image")
-        print(thumbimg["content"])
+        print("[+] Thumbnail image link:",thumbimg["content"])
         views = soup.find("meta", itemprop = "interactionCount")
-        print(views["content"])
+        print("[+] Views:",views["content"])
 except Exception as e:
     raise
