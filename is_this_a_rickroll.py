@@ -1,10 +1,5 @@
 from bs4 import BeautifulSoup as bs
 import requests as req
-url = "https://charfweh.github.io"
-ytlink = "https://www.youtube.com/watch?v=iLBBRuVDOo4"
-tag = "yt-formatted-string"
-bitly = "https://bit.ly/31KLEv6"
-ytlink1 = "https://www.youtube.com/watch?v=nsHRc8tUIK0"
 import sys
 try:
     if len(sys.argv) < 2:
