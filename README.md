@@ -23,6 +23,6 @@ Helps you evade rickroll by providing you with information about the video witho
 - [open](https://www.npmjs.com/package/open)
 - [forever](https://www.npmjs.com/package/forever)
 - [crontabs](https://kb.iu.edu/d/afiz)
-- [BeautifulSoup](https://pypi.org/project/beautifulsoup4/)
+- [BeautifulSoup](https://www.youtube.com/watch?v=QB7ACr7pUuE)
 
 *Honestly dawg, I've no idea*
