@@ -20,10 +20,10 @@ def scrapeurl(url):
         print("[-] Error:",e)
 try:
     if len(sys.argv) < 2:
-        print("No argument provided")
-    url = re.findall("^https:\/\/[^\s$.?#].[^\s]*$",sys.argv[1])
-    if(len(url)):
-        print("[+] Attempting to scrape:",url)
+        print("[-] No argument provided")
+    url = re.search("^https:\/\/www\.youtube\.com\/watch\?v=[a-zA-Z0-9]{11}",sys.argv[1])
+    if(url):
+        print("[+] Attempting to scrape:",url.string)
         scrapeurl(url)
     else:
         print("[-] Try again with a valid URL")
