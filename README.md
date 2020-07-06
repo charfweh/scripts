@@ -12,6 +12,7 @@ Adding more to this, using ``crontab``, the script runs at system startup so I d
 
 ### :small_red_triangle: is_this_a_rickroll.py
 Helps you evade rickroll by providing you with information about the video without having you look into it.
+*you either die rickrolling people or live long enough to see yourself prevent others from getting rickrolled*
 ##### Setup
 - Get em modules listed in ``Quick Links``
 - Clone or copy the code do whatever you want
