@@ -1,10 +1,9 @@
 from bs4 import BeautifulSoup as bs
 import requests as req
 import sys
-try:
-    if len(sys.argv) < 2:
-        print("No argument provided")
-    else:
+import re
+def scrapeurl(url):
+    try:
         r = req.get(sys.argv[1])
         soup = bs(r.content,"html.parser")
         yt = soup.title
@@ -17,5 +16,16 @@ try:
         print("[+] Thumbnail image link:",thumbimg["content"])
         views = soup.find("meta", itemprop = "interactionCount")
         print("[+] Views:",views["content"])
+    except Exception as e:
+        print("[-] Error:",e)
+try:
+    if len(sys.argv) < 2:
+        print("No argument provided")
+    url = re.findall("^https:\/\/[^\s$.?#].[^\s]*$",sys.argv[1])
+    if(len(url)):
+        print("[+] Attempting to scrape:",url)
+        scrapeurl(url)
+    else:
+        print("[-] Try again with a valid URL")
 except Exception as e:
     raise
