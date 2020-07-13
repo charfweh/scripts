@@ -1,10 +1,11 @@
 const open = require('open')
 const cron = require('node-cron')
 const ion = "https://top.gg/bot/449719890312691715/vote"
-console.log("yep ive started")
-// reference cron help : minute hours day-of-month month day-of-week
-cron.schedule("5,15,17,30 10,11,23,16 * * *",()=>{
-    console.log("started the cron job")
-    open(ion).then(console.log("Its time to vote"))
+console.log("Script is up")
+open(ion).then(()=>{
+ let dateobj = new Date()
+ console.log("Its time to vote")
+ console.log(dateobj.getHours())
+}).catch((e)=>{
+  console.log(e)
 })
-
