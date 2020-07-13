@@ -7,11 +7,13 @@ Adding more to this, using ``crontab``, the script runs at system startup so I d
 ##### Setup
 - Get em modules listed in ``Quick Links``
 - Clone or copy the code do whatever you want
-- Type in ``forever start the_damn_vote.js`` and thats pretty much it ;)
-- Run them
+- Open crontab by typing ``crontab -e``
+- Type in ``* * * * * export DISPLAY=:0 && /path/to/node/ /path/to/script`` and thats pretty much it ;)
+- Replace * with your time (the time when you want to run the script) 
 
 ### :small_red_triangle: is_this_a_rickroll.py
 Helps you evade rickroll by providing you with information about the video without having you look into it.
+
 *you either die rickrolling people or live long enough to see yourself prevent others from getting rickrolled*
 ##### Setup
 - Get em modules listed in ``Quick Links``
